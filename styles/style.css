@@ -153,6 +153,24 @@ header nav ul li a {
   bottom: 75px;
   right: 58px;
 }
+/* Fact section starts */
+.facts {
+  margin: 130px 0 180px 0;
+}
+.fact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.fact-card {
+  padding: 35px 45px 60px 35px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+}
+.card-number {
+  margin-bottom: 10px;
+}
 
 /* Responsive Styles */
 
@@ -163,6 +181,7 @@ header nav ul li a {
     padding: 1.5rem;
   }
   header nav,
+  /* .fact-cards, */
   .features,
   .team {
     flex-direction: column;
@@ -179,12 +198,16 @@ header nav ul li a {
     gap: 15px;
   }
   .team > div,
+  .fact-card,
   .feature-image,
   .feature-content {
     width: 100%;
   }
   .top-img-box {
     right: 0;
+  }
+  .fact-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -193,6 +216,9 @@ header nav ul li a {
     font-size: 2rem;
   }
   .team-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fact-cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
