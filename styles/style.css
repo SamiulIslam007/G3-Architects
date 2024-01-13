@@ -89,6 +89,7 @@ header nav ul li a {
   justify-content: space-between;
   align-items: center;
   margin-top: 85px;
+  margin-bottom: 40px;
 }
 .team > div {
   width: 47%;
@@ -97,6 +98,7 @@ header nav ul li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  text-align: center;
 }
 .team-image img {
   max-width: 100%;
@@ -116,7 +118,10 @@ header nav ul li a {
   display: flex;
   justify-content: space-between;
 }
-
+.feature-heading {
+  border-left: 5px solid #ff900e;
+  padding-left: 12px;
+}
 .feature-image {
   width: 45%;
 }
@@ -188,9 +193,15 @@ header nav ul li a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
+  text-align: center;
+  justify-content: center;
 }
 .sponsor-img-container {
   text-align: center;
+}
+.sponsor-img-container img {
+  filter: grayscale(100%);
+  opacity: 0.7;
 }
 
 /* Footer section styles */
@@ -243,13 +254,24 @@ footer {
   .top-img-box {
     right: 0;
   }
-  .fact-cards,
-  .sponsors-logo {
+  .fact-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .sponsors-logo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sponsors,
+  .facts,
+  .features {
+    margin: 0px 0 40px 0;
+  }
+  .sponsors-logo {
+    gap: 50px;
   }
   .sponsor-img-container {
     text-align: center;
   }
+
   footer {
     margin-bottom: 20px;
   }
