@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;1,800&display=swap");
+
+/* shared styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+header,
+main,
+footer {
+  font-family: "Work Sans", sans-serif;
+  /* padding: 0 140px; */
+}
+.btn-primary {
+  padding: 1.25rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Header styles */
+header {
+  padding: 3.125rem 8.75rem;
+  background: rgba(255, 144, 14, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .title {
+  color: #131313;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+}
+header nav ul {
+  display: flex;
+  gap: 4.4rem;
+  list-style: none;
+}
+header nav ul li a {
+  color: #424242;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.header-content {
+  margin: 6.25rem 0 3.125rem 0;
+  text-align: center;
+}
+.header-content-title {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.header-description {
+  color: #727272;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 2rem;
+}
+.header-img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 576px) {
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  .header-content {
+    margin-top: 4.25rem;
+  }
+  .header-content-title {
+    font-size: 2.5rem;
+  }
+
+  header nav ul {
+    gap: 15px;
+  }
+}
