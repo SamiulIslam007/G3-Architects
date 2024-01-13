@@ -22,6 +22,7 @@ footer {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .section-heading {
   color: #131313;
@@ -100,6 +101,7 @@ header nav ul li a {
 .team-image img {
   max-width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 .team-content h2 span:first-child {
   color: #727272;
